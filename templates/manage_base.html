@@ -1,0 +1,18 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Manager</title>
+      {% else %}
+      <title>Manager</title>
+      {% endif %}
+    </head>
+    <h1>Mangager</h1>
+    <body>
+        <div><a href="/append_book">新增書目</a></div>
+        <div><a href="/delete_book">刪除書目</a></div>
+        <div><a href="/append_people">新增成員</a></div>
+        <div><a href="/delete_people">刪除成員</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>

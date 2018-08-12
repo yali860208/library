@@ -1,0 +1,18 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Home</title>
+      {% else %}
+      <title>Welcome to Library</title>
+      {% endif %}
+    </head>
+    <body>
+        <div><a href="/unreturn">借書清單</a></div>
+        <div><a href="/search">書目搜尋</a></div>
+        <div><a href="/borrow">借書</a></div>
+        <div><a href="/return">還書</a></div>
+        <div><a href="/login">管理者</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
